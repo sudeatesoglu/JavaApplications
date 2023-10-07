@@ -4,23 +4,23 @@ public class InsertionSort {
 
     public static void sortArray(int[] arr, String order) {
         for (int i = 1; i < arr.length; i++) {
-            int initIndex = arr[i];
+            int current = arr[i];
             int refIndex = i - 1;
             // ascending sortion
             if (order.equals("Ascending")) {
-                while (refIndex >= 0 && arr[refIndex] > initIndex) {
+                while (refIndex >= 0 && arr[refIndex] > current) {
                     arr[refIndex + 1] = arr[refIndex];
                     refIndex--;
                 }
             }
             // descending sortion
             else if (order.equals("Descending")) {
-                while (refIndex >= 0 && arr[refIndex] < initIndex) {
+                while (refIndex >= 0 && arr[refIndex] < current) {
                     arr[refIndex + 1] = arr[refIndex];
                     refIndex--;
                 }
             }
-            arr[refIndex + 1] = initIndex; // re-placement
+            arr[refIndex + 1] = current; // re-placement
         }
     }
 
@@ -38,7 +38,7 @@ public class InsertionSort {
 
             int[] arr = new int[arrLength];
 
-            System.out.print("Enter the elements seperated by spaces: ");
+            System.out.print("Enter " + arrLength + " elements seperated by spaces: ");
             for (int i = 0; i < arrLength; i++) {
                 String element = scan.next();
                 if (!isNumericElement(element)) { // check if the elements of the array are numbers
