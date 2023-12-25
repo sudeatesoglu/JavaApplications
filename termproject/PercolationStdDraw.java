@@ -1,6 +1,18 @@
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdRandom;
 
+/*
+The PercolationStdDraw class demonstrates the visualization of Percolation problems using the StdDraw library
+from Princeton University's algs4 package.
+StdDraw provides a simple set of drawing methods for creating visualizations, such as drawing shapes,
+text, and images on a canvas. In this program, StdDraw is used to visualize the Percolation problem
+instances, drawing cells based on their state and displaying the results.
+
+The class includes methods to create random Percolation instances, visualize them on a canvas using StdDraw,
+and display results such as the probability p of percolation, the count of open sites,
+and whether the system percolates or not.
+*/
+
 public class PercolationStdDraw {
     private static final int GRID_SIZE = 9;
     private static final int NUM_ROWS = 2;

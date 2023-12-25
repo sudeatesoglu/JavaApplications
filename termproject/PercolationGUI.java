@@ -3,6 +3,22 @@ import edu.princeton.cs.algs4.StdRandom;
 import javax.swing.*;
 import java.awt.*;
 
+/*
+The PercolationGUI class provides a graphical user interface for visualizing Percolation problems.
+It uses Java's Swing library to create a simple GUI application with a grid of Percolation instances,
+each represented by a panel. The GUI allows users to generate new Percolation instances and visualize
+the state of each site, along with the probability of percolation and other relevant information.
+
+The class includes methods to create the main GUI components, update the panels with new Percolation problems,
+and handle the visualization of the percolation state using buttons and colors.
+
+The Percolation class, an internal class within PercolationGUI, represents the logic of the Percolation problem.
+It includes methods for opening sites, connecting adjacent open sites, checking if a site is open or full,
+calculating the probability of percolation, and determining if the system percolates.
+
+To run the GUI, the main method launches the application using SwingUtilities.invokeLater.
+*/
+
 public class PercolationGUI extends JFrame {
     private static final int GRID_SIZE = 9;
     private static final int ROWS = 2;
